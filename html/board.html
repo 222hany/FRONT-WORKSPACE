@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>간단한 게시판</title>
+    <style>
+        .board{
+            width: 600px;
+            height: 1150px;
+            background-color: lavender;
+        }
+        .post-title{
+            color: lightpink; /*제목의 글자 색상을 설정*/
+        }
+        .post{
+            padding: 10px;
+            background-color: aliceblue;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="board">
+        <p style="text-align: center; font-size:30px;"><span style="color: hotpink;">점심메뉴 게시판</span></p>
+        
+        <div class="post">
+            <div class="post-title"><h2>명동칼국수 - 역삼점</h2></div>
+            <div class="post-content">
+                <ul>
+                    <li>명동칼국수 9000원</li>
+                    <li>새우볶음밥 9000원</li>
+                </ul>
+            </div>
+            <div>
+                <img src="명칼존맛.jpg" style="width: 300px; height: 300px;">
+            </div>
+        </div><!-- 구획을 정의하며 스타일 및 레이아웃에 사용 -->
+
+        <div class="post">
+            <div class="post-title"><h2>맥주창고 - 역삼점</h2></div>
+            <div class="post-content"><p>점심메뉴 참고 ☞ <a href="https://www.instagram.com/lunch_mz/?hl=ko">링크 클릭</a></p></div>
+        </div>
+
+        <div class="post">
+            <div class="post-title"><h2>새 게시물 작성</h2></div>
+            <input type="text" placeholder="제목" style="width: 550px;"><br>
+            <input type="text" placeholder="내용" style="width: 550px; height: 300px;">
+        </div>
+    </div>
+</body>
+
+
+
+
+</html>
