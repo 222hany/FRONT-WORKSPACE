@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hany's blog</title>
+        <meta charset="UTF-8">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            header{
+                background-color: skyblue;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            nav{
+                float: left;
+                width: 20%;
+                height: 600px;
+                background: aliceblue;
+                padding: 20px;
+                color: skyblue;
+                text-align: left;
+                font-size: 20px;
+            }
+            nav ul{
+                list-style-type: none;
+                padding: 0%;
+            }
+            article{
+                float: left;
+                padding: 20px;
+                width: 80%;
+                background-color: lavender;
+                height: 600px;
+                color: plum;
+            }
+            section::after(){
+                content: "";
+                display: table;
+                clear: both;
+            }
+            footer{
+                background-color: skyblue;
+                padding: 5px;
+                text-align: center;
+                color: aliceblue;
+            }
+            @media(max-width:600px){
+                nav, article{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>하니의 블로그</h2>
+        <p>주인장 한마디 : 어서와 내 블로그에 온걸 환영해 ^~^</p>
+        <header>
+            <h2>배너</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <img src="1.jpg" style="width: 300px; height: 300px;">
+                    <li>소개</li>
+                    <li>공부</li>
+                    <li>일상</li>
+                </ul>
+            </nav>
+            <article>
+                <h1>하니의 블로그 규칙</h1>
+                <p>악성 댓글 달면 신고할거예요.<br>
+                    사진 불펌 도용 하지 마세요.</p>
+            </article>
+        </section>
+        <footer>
+            <p>하니의 깃허브 | 하니의 인스타그램 | 하니의 유튜브 | 광고문의</p>
+        </footer>
+    </body>
+</html>
