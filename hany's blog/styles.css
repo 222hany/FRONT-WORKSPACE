@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face{
+    src: url(../font/서른하나볼드MongThirtyoneB.ttf);
+    font-family: "thirtyone";
+}
+
+header{
+    background:linear-gradient(20deg, skyblue, aliceblue);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-style: italic;
+}
+nav{
+    float: right;
+    width: 20%;
+    height: 900px;
+    background: aliceblue;
+    padding: 40px;
+    color: skyblue;
+    font-size: 20px;
+    font-style: italic;
+}
+nav li{
+    text-indent: 10px;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0%;
+}
+article{
+    font-family: "thirtyone";
+    float: left;
+    padding: 20px;
+    width: 80%;
+    background-color: lavender;
+    height: 900px;
+    color: plum;
+}
+.puppysection{
+    float: center;
+    text-align: center;
+}
+section::after(){
+    content: "";
+    display: table;
+    clear: both;
+}
+footer{
+    background:linear-gradient(20deg, skyblue, aliceblue);
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+}
+@media(max-width:600px){
+    nav, article{
+        width: 100%;
+        height: auto;
+    }
+}
+.img-container{
+    display: flex;   /*이미지 가로로 나열하기*/
+    flex-wrap: wrap; /*가로로 공간이 부족할 경우 다음줄로 넘김*/
+    justify-content: center; /*가로 방향으로 중앙 정렬 이미지들이 수평 가운데 정렬*/
+}
+.image{
+    width: 380px;
+    height: 500px;
+    margin: 10px;
+}
+audio{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 2px solid aliceblue;
+    border-radius: 50px;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+audio::-webkit-media-controls-panel{
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+audio::-webkit-media-controls-play-button{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
