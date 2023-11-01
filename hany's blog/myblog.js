@@ -118,3 +118,33 @@ nextButton.addEventListener('click', ()=>{
 
 displayImg(currentPage);
 updateButtons();
+
+//============================================이미지 업로드============================================
+document.getElementById("uploadButton").addEventListener("click", function(){
+    var fileInput = document.getElementById("fileInput");
+    var uploadImage = document.getElementById("uploadImage");
+    var imageContainer = document.getElementById("imageContainer");
+
+    if(fileInput.files.length > 0){
+        var file = fileInput.files[0]; //파일 입력 필드에서 선택한 파일 목록 중 첫 번째 파일을 가져온 후 마치 사용자가 한 파일만 선택한 것처럼 보이게 함.
+        var reader = new FileReader(); //현재는 빈 값. 빈 값인 파일을 읽기 위한 FileReader() 객체를 생성한 것일 뿐
+
+        reader.onload = function (e){  //FileReader()에는 onload라는 메서드가 존재. 파일 읽기가 완료 될 때 호출.
+            uploadImage.src = e.target.result; //업로드 된 이미지를 표시. uploadImage.src : 이미지 주소를 추가. e.target.result : FileReader()가 읽은 파일의 데이터 URL을 나타냄.
+            imageContainer.style.display = "block"; //imageContainer에 스타일을 적용하여 이미지를 보여줌.
+        };
+        reader.readAsDataURL(file); //FileReader()를 사용하여 선택한 file을 DataURL로 읽은 후 문자열로 표현하여 표시.
+    }else{
+        alert("이미지 파일을 선택하세요.");
+    }
+})
+
+//===========================================할 일 목록 체크박스=============================================
+const result = document.getElementById("result");
+const list1 = document.getElementById("list1");
+const list2 = document.getElementById("list2");
+const list3 = document.getElementById("list3");
+
+list1.addEventListener("change", updateResult);
+list2.addEventListener("change", updateResult);
+list3.addEventListener("change", updateResult);

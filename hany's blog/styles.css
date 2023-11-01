@@ -6,19 +6,34 @@
     src: url(../font/서른하나볼드MongThirtyoneB.ttf);
     font-family: "thirtyone";
 }
-
-header{
-    background:linear-gradient(20deg, skyblue, aliceblue);
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
+button{
+    font-family: "thirtyone";
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    border-style: none;
+    border-radius: 10px;
     color: white;
-    font-style: italic;
+    padding: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+button:hover{
+    flex: 1 1 auto;
+    margin: 10px;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+header{
+    font-family: "thirtyone";
+    padding: 1px;
+    background:linear-gradient(45deg, rgb(160, 221, 245), aliceblue);
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    text-align: center;
+    font-size: 50px;
+    color: white;
 }
 nav{
     float: right;
     width: 20%;
-    height: 900px;
+    height: 1050px;
     background: aliceblue;
     padding: 40px;
     color: skyblue;
@@ -27,18 +42,25 @@ nav{
 }
 nav li{
     text-indent: 10px;
+    font-family: "thirtyone";
+    font-size: 25px;
 }
 nav ul{
     list-style-type: none;
     padding: 0%;
 }
-article{
+.todolist{
     font-family: "thirtyone";
+}
+article{
+    background-image: url('../image/99ACA1425E32405207.gif');
+    font-family: "thirtyone";
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
     float: left;
     padding: 20px;
     width: 80%;
     background-color: lavender;
-    height: 900px;
+    height: 1050px;
     color: plum;
 }
 .puppysection{
@@ -51,10 +73,22 @@ section::after(){
     clear: both;
 }
 footer{
-    background:linear-gradient(20deg, skyblue, aliceblue);
-    padding: 10px;
+    background:linear-gradient(45deg, rgb(160, 221, 245), aliceblue);
+    padding: 0px;
     text-align: center;
+    line-height: 70px;
     color: aliceblue;
+}
+a:link{
+    text-decoration-line: none;
+    color: white;
+}
+a:visited{
+    text-decoration-line: none;
+    color: plum;
+}
+a:hover{
+    color: aquamarine;
 }
 @media(max-width:600px){
     nav, article{
