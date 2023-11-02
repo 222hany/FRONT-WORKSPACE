@@ -16,7 +16,8 @@
             <button onclick="addItem()">추가</button>
         </div>
         <div>
-            <ul id="itemList"><!-- 여기에 물건 목록이 나열될 것입니다. -->
+            <ul id="itemList">
+                <!-- 여기에 물건 목록이 나열될 것입니다. -->
             </ul>
         </div>
         <div>
@@ -25,7 +26,7 @@
         <script>
             let total = 0;
 
-            function addItem(){
+            function addItem(){ //추가 버튼이 클릭될 때 마다 실행되는 함수
                 const itemInput = document.getElementById("item");
                 const priceInput = document.getElementById("price");
                 const quantityInput = document.getElementById("quantity");
@@ -35,12 +36,10 @@
                     const item = itemInput.value;
                     const price = parseInt(priceInput.value);
                     const quantity = parseInt(quantityInput.value);
-                    const totalPrice = price * quantity;
+                    const totalPrice = price * quantity; //물건의 총 가격을 계산하고 값을 저장한 곳
 
-                    const listItem = document.createElement("li");
-                    listItem.textContent = `
-                        ${item} (가격 : ${price}원) x ${quantity} = ${totalPrice}원
-                    `;
+                    const listItem = document.createElement("li"); //새로운 물건 항목을 생성한 후, 해당 항목을 목록에 추가.
+                    listItem.textContent = `${item} (가격 : ${price}원) x ${quantity} = ${totalPrice}원`; //textContent : 텍스트 내용을 나타낼 수 있게 해주는 속성.
                     total += totalPrice;
                     itemList.appendChild(listItem);
 

@@ -44,25 +44,26 @@
             </nav>
             
             <article>
-                <h2>▼▼▼ 나의 게시판 ▼▼▼</h2>
-                    <div>
-                        <ul id="post-list"></ul>
-                        <button id="add-post">게시글 작성</button><br><br>
-                    </div>
-                <h2>▼▼▼ 나의 앨범 ▼▼▼</h2>
-                    <div>
-                        <input type="file" id="fileInput" accept="image/*"><br><br>
-                        <button id="uploadButton">사진 업로드</button>
+                <div class="board">
+                    <h2>▼▼▼ 나의 게시판 ▼▼▼</h2>
+                    <ul id="post-list"></ul>
+                    <button id="add-post">게시글 작성</button><br><br>
+                </div>
+
+                <div class="album">
+                    <h2>▼▼▼ 나의 앨범 ▼▼▼</h2>
+                    <input type="file" id="fileInput" accept="image/*"><br><br>
+                    <button id="uploadButton">사진 업로드</button>
             
-                        <div id="imageContainer">
-                            <!-- 이미지를 표시 할 컨테이너 -->
-                            <img id="uploadImage" style="max-width: 50%;">
-                        </div>
+                    <div id="imageContainer">
+                        <!-- 이미지를 표시 할 컨테이너 -->
+                        <img id="uploadImage" style="max-width: 50%;">
                     </div>
+                </div>
                 
 
-                <h2>♥♥♥ 강아지 자랑 공간 ♥♥♥</h2>
-                <div id="pagination" class="puppysection">
+                <div id="pagination" class="puppy">
+                    <h2>♥♥♥ 강아지 자랑 공간 ♥♥♥</h2>
                     
                     <div class="img-container">
                         <!-- 이미지를 추가하는 공간 -->
@@ -77,8 +78,8 @@
         </section>
         
         <footer>
-            <p><a href="https://github.com/222hany">하니의 깃허브</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 하니의 인스타그램 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-                <a href="https://run-hany-or-not.tistory.com">하니의 블로그</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 광고문의</p>
+            <strong><a href="https://github.com/222hany">하니의 깃허브</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 하니의 인스타그램 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="https://run-hany-or-not.tistory.com">하니의 블로그</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 광고문의</strong>
         </footer>
     </body>
     </html>

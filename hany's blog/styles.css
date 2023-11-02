@@ -24,7 +24,7 @@ button:hover{
 header{
     font-family: "thirtyone";
     padding: 1px;
-    background:linear-gradient(45deg, rgb(160, 221, 245), aliceblue);
+    background-image: url("../image/sky2.jpeg");
     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
     text-align: center;
     font-size: 50px;
@@ -59,11 +59,11 @@ article{
     float: left;
     padding: 20px;
     width: 80%;
-    background-color: lavender;
+    background-color: rgb(255, 255, 233);
     height: 1050px;
     color: plum;
 }
-.puppysection{
+.puppy{
     float: center;
     text-align: center;
 }
@@ -73,11 +73,11 @@ section::after(){
     clear: both;
 }
 footer{
-    background:linear-gradient(45deg, rgb(160, 221, 245), aliceblue);
+    background-image: url("../image/sky2.jpeg");
     padding: 0px;
     text-align: center;
     line-height: 70px;
-    color: aliceblue;
+    color: plum;
 }
 a:link{
     text-decoration-line: none;
@@ -85,10 +85,10 @@ a:link{
 }
 a:visited{
     text-decoration-line: none;
-    color: plum;
+    color:plum;
 }
 a:hover{
-    color: aquamarine;
+    color: aqua;
 }
 @media(max-width:600px){
     nav, article{
