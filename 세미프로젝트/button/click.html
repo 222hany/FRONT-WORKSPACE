@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>버튼 디자인</title>
+        <style>
+            .btn1{
+                box-sizing: border-box;
+                background-color: transparent;
+                border: 2px solid #5C408C;
+                border-radius: 0.6em;
+                color: #5C408C;
+                cursor: pointer;
+                font-size: 1rem;
+                line-height: 1;
+                margin: 20px;
+                padding: 13px;
+                text-align: center;
+                font-weight: 700;
+                transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+            }
+            .btn1:hover, :focus{
+            box-shadow: 0 0 40px 40px #5C408C inset;
+            color: #fff;
+            outline: 0;
+            }
+
+            .btn2{
+                box-sizing: border-box;
+                background-color: transparent;
+                border: 2px solid #2E7D32;
+                border-radius: 0.6em;
+                color: #2E7D32;
+                cursor: pointer;
+                font-size: 1rem;
+                line-height: 1;
+                margin: 20px;
+                padding: 13px;
+                text-align: center;
+                font-weight: 700;
+                border-color: #2E7D32;
+                color: white;
+                box-shadow: 0 0 40px 40px #2E7D32 inset, 0 0 0 0 #2E7D32;
+                transition: all 150ms ease-in-out;
+            }
+            .btn2:hover{
+                box-shadow: 0 0 10px 0 #2E7D32 inset, 0 0 10px 4px #2E7D32;
+                color: #2E7D32;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button class="btn1">글 작성하기</button>
+        <br>
+        <br>
+        <button class="btn2">글 작성하기</button>
+    </body>
+</html>

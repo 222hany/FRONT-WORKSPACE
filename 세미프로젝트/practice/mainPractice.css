@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'LOTTERIACHAB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    height: 200px;
+    background-color: aquamarine;
+}
+body{
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.logo{
+    color: purple;
+    font-family: 'LOTTERIACHAB';
+    font-size: 60pt;
+    text-align: center;
+    line-height: 0px;
+}
+.slogan{
+    color: purple;
+    font-family: 'SUITE-Regular';
+    font-size: 15pt;
+    text-align: center;
+    line-height: 0px;
+}
+.login-join-link{
+    text-align: right;
+}
+.category{
+    height: 70px;
+    background-color: beige;
+    font-family: 'SUITE-Regular';
+    font-size: 20pt;
+    text-align: center;
+}
+article{
+    background-color: black;
+    padding: 200px;
+    color: white;
+    font-size: 10pt;
+}
+footer{
+    background-color: brown;
+    text-align: center;
+}
