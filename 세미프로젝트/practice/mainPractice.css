@@ -11,7 +11,7 @@
     font-style: normal;
 }
 header{
-    height: 200px;
+    height:250px;
     background-color: aquamarine;
 }
 body{
@@ -23,14 +23,13 @@ body{
     font-family: 'LOTTERIACHAB';
     font-size: 60pt;
     text-align: center;
-    line-height: 0px;
+    line-height: 0;
 }
 .slogan{
     color: purple;
     font-family: 'SUITE-Regular';
     font-size: 15pt;
     text-align: center;
-    line-height: 0px;
 }
 .login-join-link{
     text-align: right;
