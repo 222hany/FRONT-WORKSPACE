@@ -57,17 +57,24 @@ button{
     color: #5C408C;
     cursor: pointer;
     font-size: 1rem;
-    padding: 13px;
+    padding: 8px;
     text-align: center;
     font-weight: 700;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     position:fixed;
-    left:50%;
-    top:75%;
     transform: translate(-50%);
+    width: 90px;
 }
 button:hover{
     box-shadow: 0 0 40px 40px #5C408C inset;
     color: #fff;
     outline: 0;
+}
+#login_button{
+    left:50%;
+    top:55%;
+}
+#join_button{
+    left:50%;
+    top:76%;
 }

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'LOTTERIACHAB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    height:220px;
+    display: flex;
+}
+body{
+    margin-left: 350px;
+    margin-right: 350px;
+}
+#login-join-link{
+    text-align: right;
+    line-height: 0;
+}
+#gajimarket{
+    color: #6C44BB;
+    text-shadow: 10px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    font-family: 'LOTTERIACHAB';
+    font-size: 80pt;
+    margin-left: 275px;
+    line-height: 0;
+    letter-spacing: 10px;
+}
+#gajidori{
+    width: 140px;
+    margin-left: 25px;
+}
+nav{
+    background-color: lavender;
+}
+ul li{
+    display: inline-block;
+    font-family: 'SUITE-Regular';
+    font-size: 20pt;
+    margin-left: 115px;
+}
